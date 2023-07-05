@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.section1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.section1 img{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    /* padding: 25px; */
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 5;
+}
+.logo{
+    width: 15%;
+    height: 100%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.list{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.list ul{
+    width: 30%;
+    list-style: none;
+    display: flex;
+
+}
+.fawesome{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+.list li{
+    text-decoration: none;
+    padding-right:10px ;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+}
+.list a:hover{
+    color: rgb(15, 227, 117);
+
+}
+.fawesome:hover .list{
+    transition: 2s;
+    visibility: visible;
+    
+}
+.sec1-content{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+.sec1-content h3{
+    opacity: 0.8;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.sec1-content h3::before{
+  content: "";
+  background-color: rgb(107, 107, 107);
+  position: absolute;
+  top: 100%;
+  width: 100px;
+  height: 3px;
+  left: 47%;
+    
+}
+.sec1-content button{
+    margin-top: 20px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    width: 160px;
+    height: 45px;
+
+}
+.foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.foot button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+}
+
+
+
+/*  */
+.section2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.sec2-content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.con{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+}
+.con button{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+}
+.sec2-img{
+    width: 30%;
+    height: 100%;
+}
+.sec2-img img{
+    width: 100%;
+    height: 100%;
+}
+.p-line{
+    opacity: 0.8;
+    position: relative;
+}
+.p-line::before{
+  content: "";
+  background-color: rgb(107, 107, 107);
+  position: absolute;
+  top: 130%;
+  width: 100px;
+  height: 3px;
+  left: 1%;
+
+}
+
+
+
+
+
+
+.sec2-vid{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.sec2-vid img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
+}
+.sec2-vid-c{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.sec2-vid-c a{
+    color: white;
+}
+/* ========================================================= */
+/* Section 3 */
+.section3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.sec3-content{
+    height: 20%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+.sec3-content-h{
+    position: relative;
+}
+.sec3-content-h::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: rgb(152, 152, 152);
+    position: absolute;
+    top: 122%;
+    left: 42%;
+}
+
+.buttons{
+    width: 100%;
+    height: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.buttons button{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    width: 5%;
+    height: 100%;
+}
+.buttons button:hover{
+    color: white;
+    background-color: black;
+    transition: 1s;
+}
+.gallery{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery img{
+    width: 26%;
+    height: 50%;
+    padding: 5px;
+}
+.sec3-vid{
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+.sec3-vid img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.3);
+}
+.sec3-vid-c{
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    /* left: 45%; */
+}
+.sec3-vid-c i{
+    background-color: white;
+    color: black;
+    width: 3%;
+    border-radius:50% ;
+}
+.section4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* section 4 content on section 3 bec. both of them simmilar to each */
+#sec4-p{
+    margin-top: 25px;
+}
+.sec4-all-images{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec4-img{
+    height: 80%;
+    width: 15%;
+    position: relative;
+}
+.sec4-img img{
+    height: 100%;
+    width: 100%;
+
+}
+.sec4-img-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    
+}
+
+.sec4-all-description{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec4-des{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.sec4-des h2{
+    opacity: 0.6;
+}
+.sec4-footer{
+    background-color: black;
+    width: 100%;
+    height: 25%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sec4-footer h3{
+    position: absolute;
+    top: 18%;
+    left: 22%;
+}
+.sec-4-footer-input-button{
+
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.sec-4-footer-input-button button{
+    width: 15%;
+}
+.sec4-footer input{
+    width: 40%;
+    border: 1px solid white;
+    background:none ;
+    padding: 15px;
+    color: white;
+}
+.section5{
+    margin-top: 5%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* section 4 content on section 3 bec. both of them simmilar to each */
+.sec5-icons{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sec5-icons-icon{
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+.sec5-icons-icon i{
+    font-size: xx-large;
+    color: gray;
+}
+.form{
+    width: 100%;
+    height: 29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.inputs{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputs input{
+    width: 100%;
+    padding: 10px;
+
+}
+.box-message{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+
+
+}
+.box-message textarea{
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+}
+.box-message button{
+    height: 15%;
+    width: 20%;
+    background: none;
+    box-shadow: 1px 1px 10px 5px rgb(78, 78, 78);
+    
+}
+.sec5-footer{
+    height: 40%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.sec5-social-icons{
+    display: flex;
+    gap: 10px;
+}
